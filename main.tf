@@ -8,10 +8,8 @@ resource "aws_instance" "web" {
   ami = "${element(var.ami,count.index)}"
   availability_zone = "${element(var.azs,count.index)}"
   instance_type = "${var.ins_type}"
-  
+ 
   tags = {
     Name = "ts${count.index}"
   }
-
-
-  
+  }
