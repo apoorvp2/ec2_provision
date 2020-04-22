@@ -9,12 +9,12 @@ variable "instance_count"{
 
 variable "ami"{
   type = "list"
-  default = ["ami-0a74bfeb190bd404f"]
+  default = "ami-0a74bfeb190bd404f"
 }
 
 variable "azs"{
   type = "list"
-  default = ["ap-south-1a"]
+  default = "ap-south-1a"
 }
 
 variable "ins_type"{
