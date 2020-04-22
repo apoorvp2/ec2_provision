@@ -1,22 +1,25 @@
 variable "aws_region" {
+  type = string
   default = "ap-south-1"
 }
 
 
 variable "instance_count"{
-  default = "1"
+  type = number
+  default = 1
 }
 
 variable "ami"{
-  type = "list"
+  type = string
   default = "ami-0a74bfeb190bd404f"
 }
 
 variable "azs"{
-  type = "list"
+  type = list
   default = "ap-south-1a"
 }
 
 variable "ins_type"{
+  type = string
   default = "t2.micro"
 }
