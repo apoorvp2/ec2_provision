@@ -15,7 +15,7 @@ variable "ami"{
 }
 
 variable "azs"{
-  type = list
+  type = string
   default = "ap-south-1a"
 }
 
