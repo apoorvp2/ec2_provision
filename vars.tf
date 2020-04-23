@@ -6,7 +6,7 @@ variable "aws_region" {
 
 variable "instance_count"{
   type = number
-  default = 1
+  default = 2
 }
 
 variable "ami"{
